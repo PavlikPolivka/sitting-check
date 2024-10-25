@@ -8,7 +8,7 @@
       <button mat-raised-button color="accent" *ngIf="!running" (click)="start()">
         {{ 'START_BUTTON' | translate }}
       </button>
-      <button mat-raised-button color="accent" *ngId="running" (click)="stop()">
+      <button mat-raised-button color="accent" *ngIf="running" (click)="stop()">
         {{ 'STOP_BUTTON' | translate }}
       </button>
     </mat-card>
