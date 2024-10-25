@@ -1,0 +1,11 @@
+{
+    "TITLE": "Are you sitting ok?",
+    "WELCOME_MESSAGE": "Hi! Lets monitor your posture.",
+    "START_BUTTON": "Start",
+    "STOP_BUTTON": "Stop",
+    "FEEDBACK_ALIGN_SHOULDERS": "Align your shoulders!",
+    "FEEDBACK_PULL_HEAD_BACK": "Pull your head back!",
+    "FEEDBACK_GOOD_POSTURE": "Good posture! Keep it up!",
+    "FEEDBACK_CORRECT_POSTURE": "Please correct your posture!",
+    "FEEDBACK_SHOULDERS_HUNCHED": "Your shoulders are hunched forward. Try pulling them back."
+  }

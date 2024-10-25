@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+    <span>{{ 'TITLE' | translate }}</span>
+  </mat-toolbar>
+  
+  <div class="posture-analyzer">
+    <mat-card class="mat-elevation-z4">
+      <p>{{ 'WELCOME_MESSAGE' | translate }}</p>
+      <button mat-raised-button color="accent" *ngIf="!running" (click)="start()">
+        {{ 'START_BUTTON' | translate }}
+      </button>
+      <button mat-raised-button color="accent" *ngId="running" (click)="stop()">
+        {{ 'STOP_BUTTON' | translate }}
+      </button>
+    </mat-card>
+  
+    <ng-container>
+      <video #videoElement autoplay muted playsinline class="video-element"></video>
+  
+      <mat-card class="feedback-card mat-elevation-z2">
+        <p>{{ feedback$ | async }}</p>
+      </mat-card>
+    </ng-container>
+
+  
+    <div class="language-switcher">
+      <button mat-button (click)="switchLanguage('en')">English</button>
+      <button mat-button (click)="switchLanguage('cs')">Czech</button>
+    </div>
+
+    <div class="debugger">
+      <button mat-button (click)="openDebug()">Debug</button>
+    </div>
+  </div>
